@@ -2,21 +2,40 @@
 <html>
   <head>
     <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <nav>
-      <ul>
+    <header class="site-header">
+      <a class="brand" href="index.html">Naomi<span></span></a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-list">
         <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html" aria-current="page">Portfolio</a></li>
         <li><a href="blog.html">Blog</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
         <li><a href="resume.html">Resume</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-    </nav>
-    <main>
-      <h1>My Portfolio</h1>
-      <div class="project"></div>
-    </main>
+      </nav>
+    </header>
+    <main class="page-shell">
+      <div class="section-heading">
+        <h1>My portfolio</h1>
+          <p>A few areas I’m excited to explore and build in.</p>
+        </div>
+      <div class="card-grid">
+        <article class="card card-accent">
+          <h2>Classes</h2>
+          <p>Clear, welcoming interfaces that help people get where they’re going.</p>
+        </article>
+        <article class="card card-accent">
+          <h2>Work Experience</h2>
+          <p>Flexible identities and design details that make a project feel memorable.</p>
+        </article>
+        <article class="card card-accent">
+          <h2>Stories with purpose</h2>
+          <p>Thoughtful words that turn complex ideas into something people can connect with.</p>
+        </article>
+      </div>
     <footer>
       © 2026 <Naomi's Personal Website > | All Rights Reserved
     </footer>
