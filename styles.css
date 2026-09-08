@@ -1,0 +1,238 @@
+body {
+  margin : 0;
+  background-color: #f0f0f0;
+  color: #000000;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+.site-header,
+.page-shell,
+footer {
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.brand {
+  font-size: 2.1rem;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+}
+
+.brand span {
+  color: #1d413d;
+}
+
+.nav-list {
+  display: flex;
+  gap: 28px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-list a {
+  color: #5f5a54;
+  font-size: 1rem;
+}
+
+.nav-list a[aria-current="page"],
+.nav-list a:hover {
+  color: #1d1d1d;
+}
+
+.page-shell {
+  padding-top: 30px;
+  padding-bottom: 80px;
+}
+
+.eyebrow {
+  margin-bottom: 12px;
+  color: #1d413d;
+  font-size: 0.8rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 0.98;
+  letter-spacing: -0.05em;
+  font-weight: 700;
+}
+
+h1 {
+  max-width: 760px;
+  font-size: clamp(2.8rem, 6vw, 5.5rem);
+}
+
+h2 {
+  font-size: clamp(1.7rem, 4vw, 2.4rem);
+}
+
+.lede {
+  max-width: 620px;
+  margin-top: 22px;
+  color: #5f5a54;
+  font-size: 1.12rem;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 28px;
+  padding: 14px 22px;
+  border: 1px solid #1d1d1d;
+  border-radius: 999px;
+  background: #1d1d1d;
+  color: white;
+  font-weight: 700;
+}
+
+.button.secondary {
+  background: transparent;
+  color: #1d1d1d;
+  margin-left: 10px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.card,
+.resume,
+.contact-card {
+  background: #f8f6f2;
+  border: 1px solid #d9d1c7;
+  border-radius: 18px;
+  padding: 22px;
+}
+
+.card {
+  min-height: 200px;
+}
+
+.tag {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: #1d413d;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.card p,
+.resume p,
+.resume li,
+.section-heading p,
+label {
+  color: #5f5a54;
+}
+
+.section-heading {
+  margin-bottom: 26px;
+}
+
+.section-heading p {
+  margin-top: 12px;
+}
+
+.resume {
+  max-width: 760px;
+}
+
+.section {
+  padding: 22px 0;
+  border-bottom: 1px solid #d9d1c7;
+}
+
+.section:first-child { padding-top: 0; }
+.section:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.section-title {
+  margin-bottom: 8px;
+  font-size: 1.35rem;
+}
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 28px;
+}
+
+.contact-card form {
+  display: grid;
+  gap: 16px;
+}
+
+label {
+  display: block;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+input,
+textarea {
+  width: 100%;
+  margin-top: 6px;
+  background: #f5f1ea;
+  border: 1px solid #d9d1c7;
+  border-radius: 10px;
+  padding: 12px 14px;
+  font: inherit;
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+footer {
+  padding-top: 24px;
+  padding-bottom: 40px;
+  color: #5f5a54;
+  border-top: 1px solid #d9d1c7;
+}
+
+@media (max-width: 700px) {
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .nav-list {
+    flex-wrap: wrap;
+    gap: 12px 18px;
+  }
+
+  .card-grid,
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .button.secondary {
+    margin-left: 0;
+    margin-top: 12px;
+  }
+
+  .page-shell {
+    padding-top: 20px;
+  }
+}

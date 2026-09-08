@@ -2,25 +2,33 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Personal Website</title>
+    <title>Naomi's Peronal Website</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <nav>
-     <!-- <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="resume.html">Resume</a></li>
-      </ul> -->
-    </nav>
-    <main>
-      <div class="about">
-        <div class="about-image">
-          <p>
-            <em> Hello. This is my website. </em> 
-          </p>
+    <header class="site-header">
+      <a class="brand" href="index.html">Naomi<span>.</span></a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="resume.html">Resume</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page-shell">
+      <section class="hero">
+        <div class="eyebrow">Hello, I’m Naomi</div>
+        <h1>Simple ideas.<br>Thoughtful work.</h1>
+        <p class="lede">I design and build digital experiences that feel clear, calm, and useful.</p>
+        <div>
+          <a class="button" href="portfolio.html">See my work</a>
+          <a class="button secondary" href="contact.html">Say hello</a>
         </div>
-      </div>
-    </main>
+      </main>
+      
     <footer>
       © 2026 <Naomi's Personal Website > | All Rights Reserved
     </footer>
