@@ -1,12 +1,12 @@
-<!--this is doc type declaration-->
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Naomi's Peronal Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Naomi | Personal Website</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <nav>
     <header class="site-header">
       <a class="brand" href="index.html">Naomi</a>
       <nav aria-label="Main navigation">
@@ -15,22 +15,40 @@
           <li><a href="portfolio.html">Portfolio</a></li>
           <li><a href="blog.html">Blog</a></li>
           <li><a href="resume.html">Resume</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
-    <main class="page-shell">
-      <section class="hero">
-        <h1>Hello, I’m Naomi<br>Welcome to my personal website</h1>
-        <h2 class="lede">I am a computer science student going to Cal Poly San Luis Obispo.</h2>
-        <!-- add a photo and also a little more description next to it-->
-        <div>
-          <a class="button" href="portfolio.html">See Portfolio</a>
-          <a class="button secondary" href="contact.html">Let's Connect</a>
-        </div>
-      </main>
 
-    <footer>
-      © 2026 <Naomi's Personal Website > | All Rights Reserved
-    </footer>
+    <main class="page-shell">
+      <section class="hero" aria-labelledby="home-title">
+        <div>
+          <h1 id="home-title">Hello, I’m Naomi.</h1>
+          <p class="lede">
+            I’m a CS student at Cal Poly San Luis Obispo, and I love building thoughtful,
+            human-centered digital experiences that blend curiosity, creativity, and problem solving.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button" href="portfolio.html">See my work</a>
+            <a class="button secondary" href="contact.html">Let’s connect</a>
+          </div>
+        </div>
+
+        <div class="portrait-panel" aria-label="Profile introduction card">
+            <div class="portrait-circle" aria-hidden="true">
+             <img
+              src="IMG_0418.jpg"
+              alt="Naomi portrait"
+              class="profile-photo"
+              />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>© 2026 Naomi's Personal Website </footer>
   </body>
 </html>
